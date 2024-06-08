@@ -28,39 +28,18 @@ export default function Home() {
 
         <div className="main">
             <header className="header">
-                <div className="header__breadcrumb">
-                    <div className="header__breadcrumb-left">
-                        <div className="header__breadcrumb-title">
-                            <FontAwesomeIcon icon={faEmpire} /> Cấp cứu 24/24
-                        </div>
-                        <div className="header__breadcrumb-time">
-                            <FontAwesomeIcon icon={faClock} /> Mở cửa 08:00 - 20:00 (T2 - CN)
-                        </div>
-                    </div>
-                    <div className="header__breadcrumb-right">
-                        <div className="header__breadcrumb-subtitle">
-                            <FontAwesomeIcon icon={faCopyright} /> Hệ thống chăm sóc thú cưng toàn diện
-                        </div>
-                        <div className="header__breadcrumb-socials">
-                            <FontAwesomeIcon className="socialicon" icon={faFacebook} />
-                            <FontAwesomeIcon className="socialicon" icon={faInstagram} />
-                            <FontAwesomeIcon className="socialicon" icon={faYoutube} />
-                            <FontAwesomeIcon className="socialicon" icon={faTiktok} />
-                            <FontAwesomeIcon className="socialicon" icon={faEnvelope} />
-                        </div>
-                    </div>
-                </div>
+
                 <div className="header__container">
                     <div className="header__container-logo">
                         <img src="https://tropicpet.vn/wp-content/uploads/2022/11/tropicpet-logo-header.png" alt="" />
                     </div>
                     <div className="header__container-menu">
                         <ul>
-                            <a href="#"><li>home</li></a>
-                            <a href="#aboutus"><li>About us</li></a>
+                            <a href="#"><li>Trang chủ</li></a>
+                            <a href="#aboutus"><li>Giới thiệu</li></a>
 
-                            <li>Services</li>
-                            <li>News</li>
+                            <li>Dịch vụ</li>
+                            <li>Chuyên khoa</li>
                         </ul>
                     </div>
                     <div className="header__container-actions">
@@ -117,7 +96,7 @@ export default function Home() {
                     responsive={responsive}
                     ssr={true} // means to render carousel on server-side.
                     infinite={true}
-                    autoPlay={true }
+                    autoPlay={true}
                     autoPlaySpeed={3000}
                     keyBoardControl={true}
                     customTransition="all .5"
@@ -166,7 +145,7 @@ export default function Home() {
                     responsive={responsive}
                     ssr={true} // means to render carousel on server-side.
                     infinite={true}
-                    autoPlay={true }
+                    autoPlay={true}
                     autoPlaySpeed={3000}
                     keyBoardControl={true}
                     customTransition="all .5"
@@ -203,8 +182,92 @@ export default function Home() {
                         <p>Dịch vụ chụp X - Quang chất lượng cao, phục vụ cho chẩn đoán hình ảnh, phẫu thuật xương khớp hiệu quả, an toàn.</p>
                     </div>
                 </Carousel>;
-             
+
             </section>
+            <section id="services" className="services">
+                <div className="services__title">
+                    Nhận xét của khách hàng
+                </div>
+                <Carousel className="cara"
+                    swipeable={false}
+                    draggable={false}
+                    showDots={true}
+                    responsive={responsive}
+                    ssr={true} // means to render carousel on server-side.
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={3000}
+                    keyBoardControl={true}
+                    customTransition="all .5"
+                    transitionDuration={500}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    deviceType={"desktop"}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                >
+                    <div className="cara__item">
+                        <img width="425" height="313" decoding="async" src="https://tropicpet.vn/wp-content/uploads/2021/05/team-huy-2-600x519-1-600x519.jpg" alt="" />
+                        <h1>Xét nghiệm</h1>
+                        <p>Dịch vụ chụp X - Quang chất lượng cao, phục vụ cho chẩn đoán hình ảnh, phẫu thuật xương khớp hiệu quả, an toàn.</p>
+                    </div>
+                    <div className="cara__item">
+                        <img width="425" height="313" decoding="async" src="https://tropicpet.vn/wp-content/uploads/2021/05/team-huy-2-600x519-1-600x519.jpg" alt="" />
+                        <h1>Xét nghiệm</h1>
+                        <p>Dịch vụ chụp X - Quang chất lượng cao, phục vụ cho chẩn đoán hình ảnh, phẫu thuật xương khớp hiệu quả, an toàn.</p>
+                    </div>
+                    <div className="cara__item">
+                        <img width="425" height="313" decoding="async" src="https://tropicpet.vn/wp-content/uploads/2021/05/team-huy-2-600x519-1-600x519.jpg" alt="" />
+                        <h1>Xét nghiệm</h1>
+                        <p>Dịch vụ chụp X - Quang chất lượng cao, phục vụ cho chẩn đoán hình ảnh, phẫu thuật xương khớp hiệu quả, an toàn.</p>
+                    </div>
+                    <div className="cara__item">
+                        <img width="425" height="313" decoding="async" src="https://tropicpet.vn/wp-content/uploads/2021/05/team-huy-2-600x519-1-600x519.jpg" alt="" />
+                        <h1>Xét nghiệm</h1>
+                        <p>Dịch vụ chụp X - Quang chất lượng cao, phục vụ cho chẩn đoán hình ảnh, phẫu thuật xương khớp hiệu quả, an toàn.</p>
+                    </div>
+                    <div className="cara__item">
+                        <img width="425" height="313" decoding="async" src="https://tropicpet.vn/wp-content/uploads/2021/05/team-huy-2-600x519-1-600x519.jpg" alt="" />
+                        <h1>Xét nghiệm</h1>
+                        <p>Dịch vụ chụp X - Quang chất lượng cao, phục vụ cho chẩn đoán hình ảnh, phẫu thuật xương khớp hiệu quả, an toàn.</p>
+                    </div>
+                </Carousel>;
+
+            </section>
+            (
+            <footer className="footer">
+                <div className="footer-container">
+                    <div className="footer-content">
+                        <img src="tropicpet-logo.png" alt="Tropicpet Logo" className="footer-logo" />
+                        <div className="footer-description">
+                            Tropicpet là hệ thống bệnh viện thú y chất lượng cao. Chúng tôi cung cấp các giải pháp và dịch vụ chăm sóc thú cưng toàn diện, chuyên nghiệp TOP đầu tại Hà Nội.
+                        </div>
+                        <div className="footer-social-media">
+                            <a href="#" className="social-icon"><i className="fa fa-facebook"></i></a>
+                            <a href="#" className="social-icon"><i className="fa fa-instagram"></i></a>
+                            <a href="#" className="social-icon"><i className="fa fa-youtube"></i></a>
+                            <a href="#" className="social-icon"><i className="fa fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div className="footer-info">
+                        <h4>THÔNG TIN LIÊN HỆ:</h4>
+                        <p><strong>CÔNG TY CỔ PHẦN THÚ Y TROPICPET</strong></p>
+                        <p>1B Nguyễn Công Trứ, Phúc La, Hà Đông, Hà Nội.</p>
+                        <p><a href="mailto:contact@tropicpet.vn">contact@tropicpet.vn</a></p>
+                        <p><a href="http://www.tropicpet.vn">www.tropicpet.vn</a></p>
+                    </div>
+                    <div className="footer-hours">
+                        <h4>THỜI GIAN LÀM VIỆC:</h4>
+                        <p>Tropicpet làm việc tất cả các ngày trong tuần (chúng tôi hoạt động xuyên trưa).</p>
+                        <p><strong>Khung giờ mở cửa:</strong> 08:00 - 20:00</p>
+                        <p><strong>Trực đêm / Trực cấp cứu:</strong> Từ 20:00</p>
+                    </div>
+                </div>
+                <div className="footer-bottom">
+                    <p>ĐIỀU KHOẢN SỬ DỤNG | CHÍNH SÁCH BẢO MẬT</p>
+                    <p>COPYRIGHT © 2024 TROPICPET. ALL RIGHTS RESERVED. <img src="dmca-protected.png" alt="DMCA Protected" className="dmca-logo" /></p>
+                </div>
+            </footer>
         </div>
     );
 }
